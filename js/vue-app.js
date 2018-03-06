@@ -26,7 +26,7 @@ $.fn.extend({
 });
 
 /**
- * 
+ *
  * ---------------------------------
  *    vue
  * ------------------------------------------
@@ -38,6 +38,23 @@ let app = new Vue({
         app: {
             name: 'Jseus na Rua.'
         },
+        news: [
+          {
+            title:"jjj",
+            date: "124",
+            time:"121",
+            text : "ttt"
+          },
+          {
+            title:"jjj",
+            date: "124",
+            time:"121",
+            text : "ttt"
+          }
+        ],
+
+
+
         slide: {
             current: {},
             storage: [{
@@ -65,10 +82,10 @@ let app = new Vue({
             // lista de imagens
             let it
 
-            // decidindo que imagem vai colocar            
+            // decidindo que imagem vai colocar
             it = _.random(0, (app.$data.slide.storage.length - 1))
 
-            //adicionando textos            
+            //adicionando textos
             app.$data.slide.current = app.$data.slide.storage[it]
 
 

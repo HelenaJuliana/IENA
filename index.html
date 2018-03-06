@@ -1,4 +1,4 @@
-<!-- Stage- Bootstrap one page Event ticket booking theme 
+<!-- Stage- Bootstrap one page Event ticket booking theme
 Created by pixpalette.com - online design magazine -->
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +36,7 @@ Created by pixpalette.com - online design magazine -->
         </div>
     </div>
 
-    <div class="container-fluid" id='app'>            
+    <div class="container-fluid" id='app'>
         <div class="row">
             <div class="col-sm-5 left-wrapper">
                 <div id="slides" class="event-banner-wrapper">
@@ -64,7 +64,7 @@ Created by pixpalette.com - online design magazine -->
                                 <a href="#buyTicket" aria-controls="buyTicket" role="tab" data-toggle="tab">Notícias</a>
                             </li>
                             <li role="presentation">
-                                <a href="#venue" aria-controls="venue" role="tab" data-toggle="tab">O Projeto</a>
+                                <a href="#venue" aria-controls="venue" role="tab" data-toggle="tab">O Movimento</a>
                             </li>
 
                             <li role="presentation">
@@ -72,72 +72,28 @@ Created by pixpalette.com - online design magazine -->
                             </li>
 
                             <li role="presentation">
-                                    <a href="#termCondition" aria-controls="termCondition" role="tab" data-toggle="tab">Testemunhos</a>
+                                    <a href="#galeria" aria-controls="termCondition" role="tab" data-toggle="tab">Galeria</a>
                                 </li>
+                                <li role="presentation">
+                                        <a href="#Liderenca" aria-controls="termCondition" role="tab" data-toggle="tab">Liderença</a>
+                                    </li>
 
-                            
+
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active" id="buyTicket">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" v-for="notice in news">
                                         <div class="ticketBox" data-ticket-price="50000">
                                             <div class="inactiveStatus"></div>
 
                                             <div class="row">
                                                 <div class="col-xs-6">
                                                     <div class="ticket-name">
-                                                        Platinum
-                                                        <span>10/02/2018 11:16 hs</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>                                                    
-                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="40000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Gold
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[2]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.40000</p>
+                                                      {{notice.title}}
+                                                        <span>{{notice.date}} {{notice.time}}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,302 +101,13 @@ Created by pixpalette.com - online design magazine -->
 
                                             <div class="ticket-description">
                                                 <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
+                                                  {{notice.text}}
                                                 </p>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="25000">
-                                            <div class="inactiveStatus"></div>
 
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Silver
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[3]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.25000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="20000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Diamond
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[4]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[4]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[4]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.20000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="18000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Ruby
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[5]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[5]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[5]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.18000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="15000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Pearl
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[6]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[6]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[6]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.15000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="10000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Emerald
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[7]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[7]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[7]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.10000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="5000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">Plaza
-                                                        <span>
-                                                            Standing
-                                                            <br> 1 Ticket for 1 person</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[8]">
-                                                                        <span class="glyphicon glyphicon-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[8]" class="form-control input-number" value="0" min="0" max="10">
-                                                                <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[8]">
-                                                                        <span class="glyphicon glyphicon-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-
-                                                        </div>
-                                                        <p class="price">Rs.5000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <p>
-                                                    <strong>Please refer Venue Plan:</strong>
-                                                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -450,12 +117,12 @@ Created by pixpalette.com - online design magazine -->
                                             Lorem ipsum dolor sit amet, ne accusam scripserit scribentur quo, omnis dolorum eum te. Ius tritani officiis recusabo eu, graecis vituperatoribus in duo. Vidit epicuri copiosae ex eam, et alienum consulatu vim. Ei eum ipsum persius, errem vidisse cu cum.
 
                                             Cu percipitur liberavisse per, nam dicunt blandit honestatis ut. Et dicta electram conclusionemque usu, per augue aeque at. No vix laoreet nominavi posidonium, ea pri malis ocurreret, exerci postulant mei ne. Per ut sensibus pericula, in regione feugiat vel, doctus commodo torquatos est ut.
-                                            
+
                                             Eos populo possim omnesque cu. Agam convenire ei mel, qui at solum doming equidem. His equidem graecis ad, tritani eruditi pri ne. Ad graeci impedit dissentias per, ad choro bonorum consectetuer per, mel id scripta constituam reformidans.
-                                            
+
                                             Ad vis iracundia scriptorem definitionem, mundi feugiat has ne, per sale dicunt regione ne. Ad cum commodo liberavisse, utamur fuisset est cu, te qui debet nominavi scribentur. Mea mundi legere fuisset ea, ex quo tale purto. Duo postulant petentium cu. Ne diceret voluptaria qui. Ei oblique volumus prodesset eam. Per eu atomorum dissentiet, labitur mediocrem constituam vix an.
-                                            
-                                            Ne mel semper discere definitionem, ne quem alienum mel. Vim id solet consul probatus. Cum vidisse expetenda corrumpit eu. Qui ridens vidisse in, accusam evertitur id usu. Vix suscipit ullamcorper at. Tibique deseruisse vix eu, essent meliore nominavi an vel, vim prompta laboramus prodesset ad. 
+
+                                            Ne mel semper discere definitionem, ne quem alienum mel. Vim id solet consul probatus. Cum vidisse expetenda corrumpit eu. Qui ridens vidisse in, accusam evertitur id usu. Vix suscipit ullamcorper at. Tibique deseruisse vix eu, essent meliore nominavi an vel, vim prompta laboramus prodesset ad.
                                     </h4>
                             </div>
 
@@ -475,7 +142,7 @@ Created by pixpalette.com - online design magazine -->
                     <div class="cart">
                         <div class="row">
                             <div class="col-xs-6">
-                                
+
                             </div>
                             <div class="col-xs-6">
                                 <div class="text-right">
@@ -504,8 +171,8 @@ Created by pixpalette.com - online design magazine -->
                     </button>
                     <h4 class="modal-title">Deixe uma mensagem</h4>
                 </div>
-                <div class="modal-body">                   
-                    <div class="contactForm">                        
+                <div class="modal-body">
+                    <div class="contactForm">
                         <form>
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Seu nome" name='nome'>
