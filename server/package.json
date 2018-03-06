@@ -1,0 +1,26 @@
+{
+  "name": "m",
+  "version": "1.0.0",
+  "description": "The init lif eof the M",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "IA"
+  ],
+  "author": "Joerverson Santos",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.5",
+    "lowdb": "^1.0.0",
+    "script-load": "^0.1.0",
+    "token": "^0.1.0",
+    "vue": "^2.5.9"
+  }
+}
