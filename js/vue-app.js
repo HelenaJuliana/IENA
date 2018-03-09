@@ -94,7 +94,14 @@ let app = new Vue({
 
             //animação
             $('#slides').animateCss('fadeIn')
+        },
+        listNews:()=> {
+          $.get("http://localhost:3004/api/jnr/notices", {}, (e) => {
+            console.log(e);
+          } )
         }
+
+
     }
 });
 
